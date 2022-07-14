@@ -9,8 +9,6 @@ const YEAR = 2022;
 const result = YEAR - userYear;
 
 
-const leapYear = '(leap year)';
-
 
 switch (userMonth) {
     case 1:
@@ -19,7 +17,7 @@ switch (userMonth) {
         else
             value = 'Aquarius ♒';
         break;
-    case 2:
+        case 2:
         if (userDate <= 18)
             value = 'Aquarius ♒';
         else
@@ -90,13 +88,6 @@ switch (userMonth) {
 
 }
 
+const leapYearText = Boolean(userYear % 4 == 0 && (userYear % 100 != 0 || userYear % 400 == 0)) ? "(leap year)" : "";
 
-
-
-if(userYear % 400 === 0 || userYear % 4 === 0) {
-    console.log(`User Bio: ${userName} ${userSurname}, ${result} years old ${leapYear}, ${value};`);
-} else if (userYear % 100 === 0) {
-    console.log(`User Bio: ${userName} ${userSurname}, ${result} years old, ${value};`);
-} else {
-    console.log(`User Bio: ${userName} ${userSurname}, ${result} years old, ${value};`);
-}
+console.log(`User Bio: ${userName} ${userSurname}, ${result} years old${leapYearText}, ${value};`);
