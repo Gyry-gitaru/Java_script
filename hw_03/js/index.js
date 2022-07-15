@@ -91,3 +91,6 @@ switch (userMonth) {
 const leapYearText = Boolean(userYear % 4 == 0 && (userYear % 100 != 0 || userYear % 400 == 0)) ? "(leap year)" : "";
 
 console.log(`User Bio: ${userName} ${userSurname}, ${result} years old${leapYearText}, ${value};`);
+
+// const isLeapYear = userYear % 400 == 0 || (userYear % 4 == 0 && userYear % 100 != 0);
+// console.log(`User Bio: ${userName} ${userSurname}, ${result} years old${isLeapYear ? " (leap year)" : ""}, ${value};`);
