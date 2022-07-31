@@ -1,0 +1,62 @@
+.big_block {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.text {
+    font-family: cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+.red {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.orange {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.yellow {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.green {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.blue {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.dark {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(21, 101, 206);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.violet {
+    width: 60px;
+    height: 60px;
+    background-color: violet;
+    border-radius: 50%;
+    margin-top: 20px;
+}
