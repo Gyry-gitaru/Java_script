@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.label, .user__info--role, .user__courses--course {
+  display: flex;
+  align-items: center;
+  background: #ece9ff;
+  border-radius: 4px;
+  padding: 5px 10px; }
+
+.satisfactory {
+  color: #F44336;
+  background-color: rgba(244, 67, 54, 0.1); }
+
+.good {
+  color: #673AB7;
+  background-color: rgba(103, 58, 183, 0.1); }
+
+.very-good {
+  color: #00BCD4;
+  background-color: rgba(0, 188, 212, 0.1); }
+
+.excellent {
+  color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.1); }
+
+.student {
+  background-color: #ece9ff; }
+
+.admin {
+  background-color: #e9f2ff; }
+
+.lector {
+  background-color: #ffe9e9; }
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px; }
+
+.users {
+  width: 700px;
+  margin: 20px auto; }
+
+.user {
+  background: #f8f8f8;
+  border-radius: 4px;
+  padding: 15px 20px;
+  margin-bottom: 20px; }
+  .user:last-of-type {
+    margin-bottom: 0; }
+  .user__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .user__info--data {
+      display: flex;
+      align-items: center; }
+    .user__info--role {
+      min-width: 70px;
+      justify-content: center; }
+      .user__info--role p {
+        margin: 0 0 0 5px;
+        text-transform: capitalize; }
+  .user__naming {
+    padding-left: 10px; }
+    .user__naming p {
+      margin: 0 0 3px 0; }
+  .user__courses {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .user__courses--course {
+      margin: 0 10px 0 0; }
+      .user__courses--course:last-of-type {
+        margin-right: 0; }
+      .user__courses--course span {
+        padding: 2px 5px;
+        margin-left: 5px;
+        border-radius: 4px; }
+
+.admin--info {
+  align-items: flex-start; }
+  .admin--info .user__courses--course {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .admin--info .user__courses--course p {
+      margin: 0 0 5px 0; }
+
+/*# sourceMappingURL=styles.css.map */
