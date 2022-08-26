@@ -1,0 +1,73 @@
+@import ingredients
+
+$imgURL: "https://raw.githubusercontent.com/brightestsirius/cupOfCoffee/master/images/"
+
+=mask($name, $width:auto, $height:auto, $bottom:0, $left:0, $paddingRight:0)
+    background-image: url($imgURL + $name + ".svg")
+    mask-image: url($imgURL + $name + ".svg")
+    -webkit-mask-image: url($imgURL + $name + ".svg")
+
+    .coffee__ingredients
+        width: $width
+        height: $height
+        bottom: $bottom
+        left: $left
+
+    .ingredient
+        padding-right: $paddingRight
+    
+body
+    font-family: 'DynaPuff', cursive
+
+.cups
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.cup
+    margin: 10px
+
+
+.coffee
+    width: 150px
+    height: 150px
+    margin: 10px auto
+    display: flex
+    flex-direction: column-reverse
+    background-size: cover
+    mask-size: 100%
+    -webkit-mask-size: 100%
+    mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat
+    mask-position: center
+    -webkit-mask-position: center
+    position: relative
+    +mask("cup", 56%, 65%, 0, 22%)
+
+    &--espresso
+        +mask("cup--espresso",  98%, 57%, 11.5%, 2%, 23px)
+
+    &--espressoMilk
+        +mask("cup--espressoMilk", 75%, 54%, 9%, 17%, 23px)
+
+    &--dessert
+        +mask("cup--dessert", 94%, 62%, 10%, 4%, 19px)
+    
+    &--alcoholic
+        +mask("cup--alcoholic", 57%, 64%, 0%, 21%)
+
+    &__title
+        text-align: center
+        margin: 0
+
+    &__ingredients
+        display: flex
+        flex-direction: column-reverse
+        position: absolute
+        font-size: 6px
+
+.ingredient
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
