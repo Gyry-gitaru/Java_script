@@ -1,0 +1,11 @@
+.first {
+    /* transition-duration: 2s; */
+    /* background: red; */
+    border: 1px solid red;
+}
+
+.last {
+    /* transition-duration: 2s; */
+    /* background: green; */
+    border: 1px solid green;
+}
