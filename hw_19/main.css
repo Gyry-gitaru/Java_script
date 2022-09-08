@@ -1,0 +1,38 @@
+body {
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    top: calc(50% - 100px);
+    left: calc( 50% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    display: none;
+}
+.text {
+    display: block;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: coral;
+}
+
+.sit-down{
+    transition: all 0.1s ease-out;
+    transform:   scale(1.25, 0.4);
+}
+.bounce{
+    transition: all 0.1s ease-out;
+    transform: translateY(-10px);
+}
+   
