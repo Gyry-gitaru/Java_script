@@ -1,0 +1,22 @@
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#jokesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.joke {
+    border: 1px solid black;
+}
+
+.item_li {
+    border: 2px double blue;
+    padding: 10px 10px;
+}
