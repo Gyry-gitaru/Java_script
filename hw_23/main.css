@@ -1,0 +1,22 @@
+table, th, td {
+    border-collapse: collapse;
+    border:1px solid black;
+  }
+table {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+    margin-right: 10px;
+}
