@@ -32,12 +32,32 @@ h3{
     font-size: 23px;
     font-weight: 300;
     color: rgb(82, 79, 79);
-    animation: mymove 5s infinite;
+    background-image: -webkit-linear-gradient(74deg,#ff0000,#AF233E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 1s infinite linear;
+    animation: hue 1s infinite linear;
 }
-@-webkit-keyframes mymove {
-    from {color: red};
-    to {color: blue};
-}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+  
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+@keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+  
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
 
 #color_box {
     display: flex;
@@ -47,4 +67,7 @@ h3{
 .img_block {
     display: flex;
     justify-content: center;
+}
+p {
+    color: grey
 }
