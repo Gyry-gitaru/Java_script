@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+h1{
+    font-size: 23px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: rgb(82, 79, 79);
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: rgb(59, 57, 57);
+}
+
+h3{
+    font-size: 23px;
+    font-weight: 300;
+    color: rgb(82, 79, 79);
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    from {color: red};
+    to {color: blue};
+}
+
+#color_box {
+    display: flex;
+    gap: 15px;
+}
+
+.img_block {
+    display: flex;
+    justify-content: center;
+}
