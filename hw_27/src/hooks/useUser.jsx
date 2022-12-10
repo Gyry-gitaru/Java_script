@@ -3,10 +3,15 @@ import { getUser, updateUser, addNewUser } from "./../services/userService";
 
 function useUser(userId) {
   const [user, setUser] = useState({});
+  const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
-      userId && setUser(await getUser(userId));
+      if (userId) {
+        setLoading(true);
+        setUser(await getUser(userId));
+        setLoading(false);
+      }
     })();
   }, []);
 
@@ -22,7 +27,7 @@ function useUser(userId) {
     await addNewUser(user);
   };
 
-  return { user, changeInput, changeUser, createUser };
+  return { user, changeInput, changeUser, createUser, isLoading };
 }
 
 export default useUser;
